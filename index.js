@@ -59,10 +59,7 @@ module.exports = (isTS = false) =>
           dependencies: dependenciesJS,
           scripts: {
             ...commonScripts,
-            "mykit-install": `yarn && yarn add ${[
-              ...Object.keys(dependenciesJS),
-              ...installLibs
-            ].join(" ")}`
+            "mykit-install": `yarn && yarn add ${installLibs.join(" ")}`
           },
           ...commonMods
         }
@@ -81,10 +78,7 @@ module.exports = (isTS = false) =>
           dependencies: dependenciesTS,
           scripts: {
             ...commonScripts,
-            "mykit-install": `yarn && yarn add ${[
-              ...Object.keys(dependenciesTS),
-              ...installLibs
-            ].join(" ")}`
+            "mykit-install": `yarn && yarn add ${installLibs.join(" ")}`
           },
           ...commonMods
         }
