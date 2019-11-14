@@ -2,6 +2,8 @@
 
 環境構築キット: create-react-app
 
+create-react-app をグローバルインストールせずに、簡易的に現プロジェクトに展開する
+
 - JavaScript
 
 ```
