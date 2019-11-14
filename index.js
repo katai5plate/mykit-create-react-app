@@ -1,3 +1,8 @@
+const dependencies = {
+  react: "^16.11.0",
+  "react-dom": "^16.11.0",
+  "react-scripts": "3.2.0"
+};
 module.exports = () =>
   require("mykit-core")(
     __dirname,
@@ -17,16 +22,13 @@ module.exports = () =>
       { src: "serviceWorker.js", dir: "src" }
     ],
     {
-      dependencies: {
-        react: "^16.11.0",
-        "react-dom": "^16.11.0",
-        "react-scripts": "3.2.0"
-      },
+      dependencies,
       scripts: {
         start: "react-scripts start",
         build: "react-scripts build",
         test: "react-scripts test",
-        eject: "react-scripts eject"
+        eject: "react-scripts eject",
+        "mykit-install": `yarn add ${Object.keys(dependencies).join(" ")}`
       },
       eslintConfig: {
         extends: "react-app"
