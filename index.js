@@ -73,7 +73,8 @@ module.exports = (isTS = false) =>
           { src: "App.tsx", dir: "src" },
           { src: "App.test.tsx", dir: "src" },
           { src: "index.tsx", dir: "src" },
-          { src: "serviceWorker.ts", dir: "src" }
+          { src: "serviceWorker.ts", dir: "src" },
+          { src: "react-app-env.d.ts", dir: "src" }
         ],
         {
           dependencies: dependenciesTS,
