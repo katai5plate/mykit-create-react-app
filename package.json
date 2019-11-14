@@ -1,0 +1,11 @@
+{
+  "name": "mykit-create-react-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/katai5plate/mykit-create-react-app",
+  "author": "katai5plate <katai5plate.sub@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "mykit-core": "katai5plate/mykit-core"
+  }
+}
