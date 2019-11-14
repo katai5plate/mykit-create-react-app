@@ -68,6 +68,7 @@ module.exports = (isTS = false) =>
         __dirname,
         [
           ...commonResources,
+          { src: "tsconfig.json" },
           { src: "App.css", dir: "src" },
           { src: "App.tsx", dir: "src" },
           { src: "App.test.tsx", dir: "src" },
