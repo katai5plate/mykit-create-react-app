@@ -44,7 +44,7 @@ const commonScripts = {
   eject: "react-scripts eject"
 };
 module.exports = (isTS = false) =>
-  !!isTS
+  false === isTS
     ? require("mykit-core")(
         __dirname,
         [
